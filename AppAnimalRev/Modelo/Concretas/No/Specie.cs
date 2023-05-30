@@ -8,6 +8,10 @@ namespace AppAnimal.Modelo.Abstractas.No
 {
     public class Specie
     {
-        private string _name=String.Empty;
+        private string name = String.Empty;
+
+        public Specie() { }
+
+        protected string Name { get => name; set => name = value; }
     }
 }

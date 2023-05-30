@@ -1,13 +1,14 @@
-﻿using System;
+﻿using AppAnimalRev.Modelo.Abstractas.No;
+using System;
 namespace AppAnimalRev
 {
     public class Animal : Entity, IEntity
     {
-        string name = "Animal";
-        public int Energy;
-        public string Species = String.Empty;
-        public int Age;
-        public string Diet = String.Empty;        
+        private string name = "Animalia";
+        protected Energy Energia;
+        protected string Species = String.Empty;
+        protected int Age;
+        protected string Diet = String.Empty;        
 
         public string GetName()
         {

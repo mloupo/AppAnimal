@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppAnimalRev.Modelo.Abstractas.No
 {
-    internal class Energy
+    public class Energy
     {
+        public int Estado = 100;
+
     }
 }

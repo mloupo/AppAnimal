@@ -71,7 +71,7 @@
     <Compile Include="Modelo\Concretas\No\Specie.cs" />
     <Compile Include="Modelo\Concretas\No\Acuatic.cs" />
     <Compile Include="Modelo\Concretas\No\Aereal.cs" />
-    <Compile Include="Modelo\Concretas\No\Coordinates.cs" />
+    <Compile Include="Modelo\Concretas\No\Position.cs" />
     <Compile Include="Modelo\Concretas\No\Latitude.cs" />
     <Compile Include="Modelo\Concretas\No\Longitude.cs" />
     <Compile Include="Modelo\Concretas\No\Terrestrial.cs" />
