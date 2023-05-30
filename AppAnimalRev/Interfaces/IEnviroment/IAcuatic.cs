@@ -1,0 +1,4 @@
+interface IAcuatic
+{
+  void Swim();
+}

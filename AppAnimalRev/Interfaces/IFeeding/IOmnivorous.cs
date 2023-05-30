@@ -1,0 +1,5 @@
+interface IOmnivorous
+{
+  void Eat();
+
+}

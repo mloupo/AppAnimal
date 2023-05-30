@@ -1,0 +1,5 @@
+interface IFrugivoros
+{
+  void Eat();
+
+}

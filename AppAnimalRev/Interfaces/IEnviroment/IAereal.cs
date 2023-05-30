@@ -1,0 +1,5 @@
+interface IAereal
+{
+  void Fly();
+
+}

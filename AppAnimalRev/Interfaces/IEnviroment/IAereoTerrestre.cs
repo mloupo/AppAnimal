@@ -1,0 +1,4 @@
+interface IAereoTerrestre: IAereal, ITerrestrial
+{
+  
+}

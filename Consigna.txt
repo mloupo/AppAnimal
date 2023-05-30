@@ -1,0 +1,10 @@
+Codificar una aplicación que permita crear diferentes especies de animales terrestres (caminan o se arrastran), acuáticos (nadan) y aero-terrestres (caminan y vuelan). Los mismos pueden alimentarse, moverse y dormir.
+
+
+Al momento de crear (instanciar) un animal se le asignará automáticamente un identificador (ID), se posicionará en el vector (0,0) y se establecerá su energía en 100; donde 100 es el valor máximo y 0 el mínimo. Además debe permitir al momento de su creación que el usuario ingrese el nombre de la especie, su peso, edad y dieta (carnívoro, herbívoro u omnívoro).
+
+Un animal debe tener suficiente energía para moverse; el movimiento para cualquier animal tiene un costo de 30 de energía. Un animal obtiene energía alimentándose únicamente de comida que respete su dieta (carnívora, herbívora u omnívora) o durmiendo; dormir recupera el 50% del máximo de energía. 
+
+La aplicación debe permitir la creación de alimentos para los animales. Al momento de crear (instanciar) un alimento se le asignará automáticamente un identificador (ID). Además debe permitir al momento de su creación que el usuario ingrese el nombre, las calorías que aporta (energía para el animal) y el tipo de alimento (vegetal o animal).
+
+Es requerimiento contar con una interfaz de usuario (visual o por consola) que permita mover animales, alimentarlos o hacerlos dormir. También debe proveer la opción de consultar todos los datos de un animal.
