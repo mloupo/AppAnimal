@@ -1,6 +1,8 @@
-﻿namespace AppAnimalRev
+﻿using static AppAnimalRev.Enums;
+
+namespace AppAnimalRev
 {
     public interface IFactoryMethod    {
-        IEntity GetProduct(string name);        
+        IEntity GetCreation(TipoCreacion name);        
     }
 }

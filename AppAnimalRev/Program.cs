@@ -1,4 +1,8 @@
-﻿namespace AppAnimalRev
+﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Security.Cryptography.X509Certificates;
+using static AppAnimalRev.StaticFunctions;
+namespace AppAnimalRev
 {
     internal class Program
     {
@@ -8,17 +12,24 @@
 
             IFactoryMethod factory = new EntityFactory();
 
-            IEntity OComida = factory.GetProduct("Comida");
+            IEntity OComida = factory.GetCreation(Enums.TipoCreacion.Comida);
             interactor.write(OComida.GetName());
             interactor.read();
 
-            IEntity OAnimal = factory.GetProduct("Animal");
+            IEntity OAnimal = factory.GetCreation(Enums.TipoCreacion.Animal);
             interactor.write(OAnimal.GetName());
             interactor.read();
 
-            IEntity OVegetal = factory.GetProduct("Planta");
+            IEntity OVegetal = factory.GetCreation(Enums.TipoCreacion.Planta);
             interactor.write(OVegetal.GetName());
             interactor.read();
-        }
+
+
+            double prome = Promedio( 27, 9, 18);
+            Console.WriteLine("El promedio es: " + prome);
+            Console.ReadLine(); 
+            
+        }       
     }
 }
+
