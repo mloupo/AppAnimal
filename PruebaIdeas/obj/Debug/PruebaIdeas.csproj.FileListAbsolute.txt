@@ -1,0 +1,11 @@
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\bin\Debug\PruebaIdeas.exe.config
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\bin\Debug\PruebaIdeas.exe
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\bin\Debug\PruebaIdeas.pdb
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.csproj.AssemblyReference.cache
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.Form1.resources
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.Properties.Resources.resources
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.csproj.GenerateResource.cache
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.csproj.CoreCompileInputs.cache
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.exe
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\PruebaIdeas\obj\Debug\PruebaIdeas.pdb

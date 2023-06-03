@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAnimalRev", "AppAnimalRev\AppAnimalRev.csproj", "{977C6235-1EEF-4DFF-ACA5-87864D9919D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaIdeas", "PruebaIdeas\PruebaIdeas.csproj", "{44896002-C945-4DDC-9B60-1D9A34AAC211}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{977C6235-1EEF-4DFF-ACA5-87864D9919D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977C6235-1EEF-4DFF-ACA5-87864D9919D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977C6235-1EEF-4DFF-ACA5-87864D9919D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ namespace AppAnimalRev
     {
         static void Main(string[] args)
         {
-            IStringInteractor interactor = new ConsoleInteractor();
+          /*  IStringInteractor interactor = new ConsoleInteractor();
 
             IFactoryMethod factory = new EntityFactory();
 
@@ -26,10 +26,16 @@ namespace AppAnimalRev
 
 
             double prome = Promedio( 27, 9, 18);
-            Console.WriteLine("El promedio es: " + prome);
-            Console.ReadLine(); 
+            Console.WriteLine("El promedio es: " + prome);*/
+
+            Console.WriteLine(char.IsDigit('.')); 
             
-        }       
+            for (int i=0, j=5; i < 6; i++, j--) 
+            {
+                Console.WriteLine("i={0}, j={1}", i, j); 
+            }
+            Console.ReadLine();
+        }
     }
 }
 

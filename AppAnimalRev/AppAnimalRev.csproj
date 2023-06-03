@@ -78,6 +78,7 @@
     <Compile Include="Modelo\Concretas\No\Terrestrial.cs" />
     <Compile Include="Modelo\Factory\Planta.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramHelpers.cs" />
     <Compile Include="StaticFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Ensure.cs" />
