@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{44896002-C945-4DDC-9B60-1D9A34AAC211}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>PruebaIdeas</RootNamespace>
     <AssemblyName>PruebaIdeas</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -32,7 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +51,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormHijo2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormHijo2.Designer.cs">
+      <DependentUpon>FormHijo2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHijo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijo3.Designer.cs">
+      <DependentUpon>FormHijo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMDI.Designer.cs">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijo.Designer.cs">
+      <DependentUpon>FormHijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsController.cs" />
+    <Compile Include="FormModificarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarDatos.Designer.cs">
+      <DependentUpon>FormModificarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITrasladoInfo.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Tarea.cs" />
+    <EmbeddedResource Include="FormHijo2.resx">
+      <DependentUpon>FormHijo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijo3.resx">
+      <DependentUpon>FormHijo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMDI.resx">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijo.resx">
+      <DependentUpon>FormHijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarDatos.resx">
+      <DependentUpon>FormModificarDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
