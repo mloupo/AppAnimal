@@ -51,9 +51,9 @@
             this.ventanasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventana1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventana2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventana3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tssUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ventana3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -238,16 +238,23 @@
             // ventana1ToolStripMenuItem
             // 
             this.ventana1ToolStripMenuItem.Name = "ventana1ToolStripMenuItem";
-            this.ventana1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ventana1ToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.ventana1ToolStripMenuItem.Text = "ventana 1";
             this.ventana1ToolStripMenuItem.Click += new System.EventHandler(this.ventana1ToolStripMenuItem_Click);
             // 
             // ventana2ToolStripMenuItem
             // 
             this.ventana2ToolStripMenuItem.Name = "ventana2ToolStripMenuItem";
-            this.ventana2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ventana2ToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.ventana2ToolStripMenuItem.Text = "ventana 2";
             this.ventana2ToolStripMenuItem.Click += new System.EventHandler(this.ventana2ToolStripMenuItem_Click);
+            // 
+            // ventana3ToolStripMenuItem
+            // 
+            this.ventana3ToolStripMenuItem.Name = "ventana3ToolStripMenuItem";
+            this.ventana3ToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.ventana3ToolStripMenuItem.Text = "ventana 3";
+            this.ventana3ToolStripMenuItem.Click += new System.EventHandler(this.ventana3ToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -264,13 +271,6 @@
             // 
             this.tssUsuario.Name = "tssUsuario";
             this.tssUsuario.Size = new System.Drawing.Size(0, 16);
-            // 
-            // ventana3ToolStripMenuItem
-            // 
-            this.ventana3ToolStripMenuItem.Name = "ventana3ToolStripMenuItem";
-            this.ventana3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ventana3ToolStripMenuItem.Text = "ventana 3";
-            this.ventana3ToolStripMenuItem.Click += new System.EventHandler(this.ventana3ToolStripMenuItem_Click);
             // 
             // FormMDI
             // 
@@ -300,6 +300,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMDI";
             this.Text = "Form MDI";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMDI_FormClosing);
             this.Load += new System.EventHandler(this.FormMDI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

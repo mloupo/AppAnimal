@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAnimalRev", "AppAnimalRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaIdeas", "PruebaIdeas\PruebaIdeas.csproj", "{44896002-C945-4DDC-9B60-1D9A34AAC211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejoFormularios", "ManejoFormularios\ManejoFormularios.csproj", "{3287760A-EE1E-49CD-BA5D-00F23B51E212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44896002-C945-4DDC-9B60-1D9A34AAC211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3287760A-EE1E-49CD-BA5D-00F23B51E212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3287760A-EE1E-49CD-BA5D-00F23B51E212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3287760A-EE1E-49CD-BA5D-00F23B51E212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3287760A-EE1E-49CD-BA5D-00F23B51E212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

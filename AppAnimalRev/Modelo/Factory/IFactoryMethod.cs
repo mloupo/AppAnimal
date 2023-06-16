@@ -3,6 +3,6 @@
 namespace AppAnimalRev
 {
     public interface IFactoryMethod    {
-        IEntity GetCreation(TipoCreacion name);        
+        IEntity GetCreation(TipoCreacion kingdom);        
     }
 }

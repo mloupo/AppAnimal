@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AppAnimalRev
 {
-    public class Food : Entity, IEntity
+    public class Food : Thing, IEntity
     {
         private string name = "Comida";
         protected string Species = String.Empty;

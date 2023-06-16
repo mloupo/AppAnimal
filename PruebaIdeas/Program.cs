@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebaIdeas
@@ -16,7 +13,7 @@ namespace PruebaIdeas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMDI());
+            Application.Run(new FormLogin());
 
             /*Product oProduct= new Product(100);
             Console.WriteLine("Precio de venta calculado: {0}", oProduct.PrecioVenta);            

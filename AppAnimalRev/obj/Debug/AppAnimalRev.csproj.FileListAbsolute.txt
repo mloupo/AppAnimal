@@ -3,6 +3,9 @@ C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\bin\
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\bin\Debug\AppAnimalRev.pdb
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.csproj.AssemblyReference.cache
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.FormAllCreations.resources
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.FormCreate.resources
+C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.csproj.GenerateResource.cache
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.csproj.CoreCompileInputs.cache
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.exe
 C:\Users\Zen\ITEC\AnalistaProgramador\3er\EDI POOADV\AppAnimal\AppAnimalRev\obj\Debug\AppAnimalRev.pdb

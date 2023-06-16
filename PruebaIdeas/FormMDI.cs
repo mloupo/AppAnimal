@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
+﻿
+using System;
 using System.Windows.Forms;
 
 namespace PruebaIdeas
 {
     public partial class FormMDI : Form
     {
-       
-        public FormMDI()
+        private int childFormNumber = 0;
+        private FormLogin frmParaCerrar = null;
+        public FormMDI(FormLogin login)
         {
+            frmParaCerrar =login;   
             InitializeComponent();
             btnCondicionado.Enabled = false;
             btnCondicionado2.Enabled = false;
@@ -159,5 +154,9 @@ namespace PruebaIdeas
             return false;
         }
 
+        private void FormMDI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmParaCerrar.Close();
+        }
     }
 }

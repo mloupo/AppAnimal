@@ -7,16 +7,16 @@ namespace AppAnimalRev
     {
         public EntityFactory() { }
 
-        public IEntity GetCreation(TipoCreacion name)
+        public IEntity GetCreation(TipoCreacion kingdom)
         {
             IEntity entity = null;
-            switch (name)
+            switch (kingdom)
             {
                 case TipoCreacion.Animal:
-                    entity = new Animal();
+                    entity = new Animalia();
                     break;
                 case TipoCreacion.Planta:
-                    entity = new Planta();
+                    entity = new Plantae();
                     break;
                 case TipoCreacion.Comida:                    
                     entity = new Food();
