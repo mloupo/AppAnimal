@@ -3,7 +3,8 @@ namespace AppAnimalRev
 {
     public class Food : Thing, IEntity
     {
-        private string name = "Comida";
+        protected string kingdom = "Comida";
+        protected string name = String.Empty;
         protected string Species = String.Empty;
         protected int Calories;
         protected int Age;

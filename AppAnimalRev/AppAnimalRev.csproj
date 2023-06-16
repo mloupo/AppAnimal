@@ -77,13 +77,13 @@
     <Compile Include="FormCreate.Designer.cs">
       <DependentUpon>FormCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Concretas\Energy.cs" />
-    <Compile Include="Modelo\Factory\Animalia.cs" />
-    <Compile Include="Modelo\Factory\Thing.cs" />
+    <Compile Include="Modelo\Energy.cs" />
+    <Compile Include="Modelo\Kingdom\Animalia.cs" />
+    <Compile Include="Modelo\Abstractas\Thing.cs" />
     <Compile Include="Modelo\Factory\EntityFactory.cs" />
-    <Compile Include="Modelo\Factory\Food.cs" />
-    <Compile Include="Modelo\Factory\IEntity.cs" />
-    <Compile Include="Modelo\Factory\IFactoryMethod.cs" />
+    <Compile Include="Modelo\Kingdom\Food.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IFactoryMethod.cs" />
     <Compile Include="Interactors\ConsoleInteractor.cs" />
     <Compile Include="Interfaces\IAnimal.cs" />
     <Compile Include="Interfaces\IBreathing\IBreathing.cs" />
@@ -99,17 +99,15 @@
     <Compile Include="Interfaces\IFood.cs" />
     <Compile Include="Interfaces\ILiving\ILiving.cs" />
     <Compile Include="Interfaces\IRest\IRest.cs" />
-    <Compile Include="Modelo\Abstractas\No\Kingdom.cs" />
-    <Compile Include="Modelo\Abstractas\No\NonOrganic.cs" />
-    <Compile Include="Modelo\Abstractas\No\Organic.cs" />
-    <Compile Include="Modelo\Concretas\No\Specie.cs" />
+    <Compile Include="Modelo\Abstractas\NonOrganic.cs" />
+    <Compile Include="Modelo\Abstractas\Organic.cs" />
     <Compile Include="Modelo\Concretas\No\Acuatic.cs" />
     <Compile Include="Modelo\Concretas\No\Aereal.cs" />
-    <Compile Include="Modelo\Concretas\No\Position.cs" />
-    <Compile Include="Modelo\Concretas\No\Latitude.cs" />
-    <Compile Include="Modelo\Concretas\No\Longitude.cs" />
+    <Compile Include="Modelo\Posicion\Position.cs" />
+    <Compile Include="Modelo\Posicion\Latitude.cs" />
+    <Compile Include="Modelo\Posicion\Longitude.cs" />
     <Compile Include="Modelo\Concretas\No\Terrestrial.cs" />
-    <Compile Include="Modelo\Factory\Plantae.cs" />
+    <Compile Include="Modelo\Kingdom\Plantae.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramHelpers.cs" />
     <Compile Include="StaticFunctions.cs" />
@@ -121,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\IEnviroment\IMotion\" />
+    <Folder Include="Modelo\Abstractas\No\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormAllCreations.resx">

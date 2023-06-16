@@ -8,7 +8,13 @@ namespace AppAnimalRev.Modelo.Abstractas.No
 {
     public class Energy
     {
-        public int Estado = 100;
+        private int _estado = 100;
 
+        public int Estado { get => _estado; set => _estado = value; }
+
+        protected void RecargarEnergia()
+        {
+
+        }
     }
 }

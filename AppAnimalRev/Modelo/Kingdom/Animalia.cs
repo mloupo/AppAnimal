@@ -7,7 +7,7 @@ namespace AppAnimalRev
     {
         protected string kingdom = "Animalia";
         protected Energy Energia;
-        protected string Species = String.Empty;
+        
         protected int Age;
         protected string Diet = String.Empty;        
 
@@ -15,6 +15,7 @@ namespace AppAnimalRev
         {
             return Name;
         }
+
 
         public Animalia()
         {

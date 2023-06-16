@@ -9,7 +9,7 @@ namespace AppAnimal.Modelo.Abstractas.No
 {
     public abstract class Organic : Thing
     {
-        protected Specie Especie { get; set; }
+        protected string Species = String.Empty;
         public Organic()
         {       }
     }
