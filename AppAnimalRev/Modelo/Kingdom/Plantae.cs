@@ -9,9 +9,9 @@ namespace AppAnimalRev
         private string _name = String.Empty;
         protected Energy Energia;
         protected int Age;
-        public string GetName()
+        public string WhoIAm()
         {
-            return Name;
+            return "Plantae";
         }
 
         public Plantae()

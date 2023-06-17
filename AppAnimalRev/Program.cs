@@ -14,20 +14,21 @@ namespace AppAnimalRev
             
 
             IStringInteractor interactor = new ConsoleInteractor();
-
             IFactoryMethod factory = new EntityFactory();
 
             IEntity OComida = factory.GetCreation(Enums.TipoCreacion.Comida);
-            interactor.write(OComida.GetName());
+            interactor.write(OComida.ToString());
             interactor.read();
 
-            IEntity OAnimal = factory.GetCreation(Enums.Kingdom.Animalia);
-            interactor.write(OAnimal.GetName());
+            IEntity OAnimal = factory.GetCreation(Enums.TipoCreacion.Animalia);
+            interactor.write(OAnimal.WhoIAm());
             interactor.read();
 
-            IEntity OVegetal = factory.GetCreation(Enums.TipoCreacion.Planta);
-            interactor.write(OVegetal.GetName());
+            IEntity OVegetal = factory.GetCreation(Enums.TipoCreacion.Plantae);
+            interactor.write(OVegetal.WhoIAm());
             interactor.read();
+            Console.ReadLine();
+
             /*1  
 
 

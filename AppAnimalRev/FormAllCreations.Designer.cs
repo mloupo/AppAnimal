@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cbClass = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -53,11 +54,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(798, 348);
             this.dataGridView1.TabIndex = 0;
             // 
+            // cbClass
+            // 
+            this.cbClass.FormattingEnabled = true;
+            this.cbClass.Location = new System.Drawing.Point(77, 48);
+            this.cbClass.Name = "cbClass";
+            this.cbClass.Size = new System.Drawing.Size(189, 24);
+            this.cbClass.TabIndex = 2;
+            // 
             // FormAllCreations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbClass);
             this.Controls.Add(this.panel1);
             this.Name = "FormAllCreations";
             this.Text = "FormAllCreations";
@@ -71,5 +81,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbClass;
     }
 }

@@ -12,10 +12,10 @@ namespace AppAnimalRev
             IEntity entity = null;
             switch (kingdom)
             {
-                case TipoCreacion.Animal:
+                case TipoCreacion.Animalia:
                     entity = new Animalia();
                     break;
-                case TipoCreacion.Planta:
+                case TipoCreacion.Plantae:
                     entity = new Plantae();
                     break;
                 case TipoCreacion.Comida:                    

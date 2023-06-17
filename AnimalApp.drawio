@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-06-16T15:56:53.941Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="8_fS1cC19uydOVpTmJJF" version="21.4.0" type="device" pages="14">
+<mxfile host="Electron" modified="2023-06-17T00:35:17.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="nqzG-fKHy9CbafK4FVom" version="21.4.0" type="device" pages="14">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="AppAnimal ">
     <mxGraphModel dx="3172" dy="3089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -627,9 +627,6 @@
             <mxPoint x="-260" y="-960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HUMDP3m9NFjbSiO9RFBs-7" value="&lt;div&gt;protected string Name = string.Empty;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; protected int Id;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; protected Position Position;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; public Kingdom Kingdom { get; set; }&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; protected int Peso;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-570" y="368" width="360" height="70" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -1034,7 +1031,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="srs8gADzcxCgo0sMO6ip" name="Composite Pattern">
-    <mxGraphModel dx="1276" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1290" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

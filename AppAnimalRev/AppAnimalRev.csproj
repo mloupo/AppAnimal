@@ -77,6 +77,8 @@
     <Compile Include="FormCreate.Designer.cs">
       <DependentUpon>FormCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IEnviroment\IEnviroment.cs" />
+    <Compile Include="Interfaces\IViviente.cs" />
     <Compile Include="Modelo\Energy.cs" />
     <Compile Include="Modelo\Kingdom\Animalia.cs" />
     <Compile Include="Modelo\Abstractas\Thing.cs" />
@@ -101,12 +103,12 @@
     <Compile Include="Interfaces\IRest\IRest.cs" />
     <Compile Include="Modelo\Abstractas\NonOrganic.cs" />
     <Compile Include="Modelo\Abstractas\Organic.cs" />
-    <Compile Include="Modelo\Concretas\No\Acuatic.cs" />
-    <Compile Include="Modelo\Concretas\No\Aereal.cs" />
+    <Compile Include="Modelo\Concretas\Acuatic.cs" />
+    <Compile Include="Modelo\Concretas\Aereal.cs" />
     <Compile Include="Modelo\Posicion\Position.cs" />
     <Compile Include="Modelo\Posicion\Latitude.cs" />
     <Compile Include="Modelo\Posicion\Longitude.cs" />
-    <Compile Include="Modelo\Concretas\No\Terrestrial.cs" />
+    <Compile Include="Modelo\Concretas\Terrestrial.cs" />
     <Compile Include="Modelo\Kingdom\Plantae.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramHelpers.cs" />
@@ -118,8 +120,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\IEnviroment\IMotion\" />
-    <Folder Include="Modelo\Abstractas\No\" />
+    <Folder Include="Interfaces\IMotion\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormAllCreations.resx">

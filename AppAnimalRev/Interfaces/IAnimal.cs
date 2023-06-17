@@ -9,6 +9,7 @@ namespace AppAnimalRev.Interfaces
                                             //Coordinates =(x,y)
                                             //return [Newposition(x,y), (energy-30)] 
         void Sleep(); //recupera el 50 % de energia
-        void WhoIAm(); //Soy tal, de tal especie y tantos años
+        string WhoIAm(); //Soy tal, de tal especie y tantos años
+
     }
 }

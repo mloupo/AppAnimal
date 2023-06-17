@@ -12,12 +12,13 @@ namespace AppAnimalRev
 
         public Food()
         {
-            Name = name;
+
         }
 
-        public string GetName()
+        public string WhoIAm()
         {
-            return Name;
+            name = "Comida";
+            return name;
         }
     }
 }

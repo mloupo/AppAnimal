@@ -2,6 +2,6 @@
 {
     public interface IEntity
     {        
-        string GetName();
+        string WhoIAm();
     }
 }

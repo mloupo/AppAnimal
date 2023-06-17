@@ -4,15 +4,9 @@ namespace AppAnimalRev
 {
     public class ConsoleInteractor : IStringInteractor
     {
-        public string read()
-        {
-            return Console.ReadLine();
-        }
+        public string read() { return Console.ReadLine(); }
 
-        public void write(string line)
-        {
-            Console.WriteLine(line);
-        }
+        public void write(string line) { Console.WriteLine(line); }
     }
 
     public class UI_Interactor : IStringInteractor

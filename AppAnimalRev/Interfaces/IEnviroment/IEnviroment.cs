@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppAnimalRev.Controladores
+namespace AppAnimalRev.Interfaces.IEnviroment
 {
-    internal class FormController
+    internal interface IEnviroment
     {
-
+        void move();
     }
 }

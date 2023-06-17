@@ -17,3 +17,10 @@ las calorías que aporta (energía para el animal) y el tipo de alimento (vegeta
 
 Es requerimiento contar con una interfaz de usuario (visual o por consola) que permita mover animales,
 alimentarlos o hacerlos dormir. También debe proveer la opción de consultar todos los datos de un animal.
+
+	protected string Name = string.Empty;
+        protected int Id;
+        protected Position Position;
+        protected int Peso;
+ 	protected Specie Especie { get; set; }
+        protected Kingdom Kingdom { get; set; }
