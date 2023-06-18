@@ -1,5 +1,5 @@
 ﻿
-namespace AppAnimal.Modelo.Concretas.No
+namespace AppAnimal.Modelo.Concretas
 {
     public class Acuatic
     {

@@ -1,4 +1,4 @@
-﻿using AppAnimal.Modelo.Concretas.No;
+﻿using AppAnimal.Modelo.Posicion;
 
 namespace AppAnimalRev
 {
@@ -8,5 +8,9 @@ namespace AppAnimalRev
         protected int Id;
         protected Position Position;
         protected int Peso;
+
+
+
     }
+
 }

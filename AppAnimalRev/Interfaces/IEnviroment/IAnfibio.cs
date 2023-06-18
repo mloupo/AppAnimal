@@ -1,4 +1,0 @@
-interface IAnfibio: IAcuatic, ITerrestrial
-{
-  
-}

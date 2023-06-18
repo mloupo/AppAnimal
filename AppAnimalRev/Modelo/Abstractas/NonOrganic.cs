@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppAnimal.Modelo.Abstractas.No
+namespace AppAnimal.Modelo.Abstractas
 {
     internal class NonOrganic
     {

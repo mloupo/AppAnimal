@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace AppAnimal.Modelo.Concretas.No
+namespace AppAnimal.Modelo.Posicion
 {
+
     internal class Longitude
      {
          private readonly float value;

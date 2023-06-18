@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{977C6235-1EEF-4DFF-ACA5-87864D9919D5}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>AppAnimalRev</RootNamespace>
     <AssemblyName>AppAnimalRev</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -77,9 +77,8 @@
     <Compile Include="FormCreate.Designer.cs">
       <DependentUpon>FormCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IEnviroment\IEnviroment.cs" />
-    <Compile Include="Interfaces\IViviente.cs" />
-    <Compile Include="Modelo\Energy.cs" />
+    <Compile Include="Interfaces\Enviroment\IEnviroment.cs" />
+    <Compile Include="Modelo\Vitalidad\Energy.cs" />
     <Compile Include="Modelo\Kingdom\Animalia.cs" />
     <Compile Include="Modelo\Abstractas\Thing.cs" />
     <Compile Include="Modelo\Factory\EntityFactory.cs" />
@@ -88,19 +87,19 @@
     <Compile Include="Interfaces\IFactoryMethod.cs" />
     <Compile Include="Interactors\ConsoleInteractor.cs" />
     <Compile Include="Interfaces\IAnimal.cs" />
-    <Compile Include="Interfaces\IBreathing\IBreathing.cs" />
-    <Compile Include="Interfaces\IEnviroment\IAcuatic.cs" />
-    <Compile Include="Interfaces\IEnviroment\IAereal.cs" />
-    <Compile Include="Interfaces\IEnviroment\IAereoTerrestre.cs" />
-    <Compile Include="Interfaces\IEnviroment\IAnfibio.cs" />
-    <Compile Include="Interfaces\IEnviroment\ITerrestrial.cs" />
-    <Compile Include="Interfaces\IFeeding\ICarnivorous.cs" />
-    <Compile Include="Interfaces\IFeeding\IFrugivorous.cs" />
-    <Compile Include="Interfaces\IFeeding\IHervivorous.cs" />
-    <Compile Include="Interfaces\IFeeding\IOmnivorous.cs" />
+    <Compile Include="Interfaces\Breathing\IBreathing.cs" />
+    <Compile Include="Interfaces\Enviroment\IAcuatic.cs" />
+    <Compile Include="Interfaces\Enviroment\IAereal.cs" />
+    <Compile Include="Interfaces\Enviroment\IAereoTerrestre.cs" />
+    <Compile Include="Interfaces\Enviroment\IAnfibio.cs" />
+    <Compile Include="Interfaces\Enviroment\ITerrestrial.cs" />
+    <Compile Include="Interfaces\Feeding\ICarnivorous.cs" />
+    <Compile Include="Interfaces\Feeding\IFrugivorous.cs" />
+    <Compile Include="Interfaces\Feeding\IHervivorous.cs" />
+    <Compile Include="Interfaces\Feeding\IOmnivorous.cs" />
     <Compile Include="Interfaces\IFood.cs" />
-    <Compile Include="Interfaces\ILiving\ILiving.cs" />
-    <Compile Include="Interfaces\IRest\IRest.cs" />
+    <Compile Include="Interfaces\Living\ILiving.cs" />
+    <Compile Include="Interfaces\Rest\IRest.cs" />
     <Compile Include="Modelo\Abstractas\NonOrganic.cs" />
     <Compile Include="Modelo\Abstractas\Organic.cs" />
     <Compile Include="Modelo\Concretas\Acuatic.cs" />
@@ -111,8 +110,8 @@
     <Compile Include="Modelo\Concretas\Terrestrial.cs" />
     <Compile Include="Modelo\Kingdom\Plantae.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramHelpers.cs" />
-    <Compile Include="StaticFunctions.cs" />
+    <Compile Include="Services\ProgramHelpers.cs" />
+    <Compile Include="Services\StaticFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Ensure.cs" />
   </ItemGroup>
@@ -120,7 +119,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\IMotion\" />
+    <Folder Include="Interfaces\Motion\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormAllCreations.resx">

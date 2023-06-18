@@ -1,5 +1,0 @@
-interface IAereal
-{
-  void Fly();
-
-}

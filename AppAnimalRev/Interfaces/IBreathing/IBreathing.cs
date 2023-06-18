@@ -1,4 +1,0 @@
-interface IBreathing
-{
-    void Breathe();
-}

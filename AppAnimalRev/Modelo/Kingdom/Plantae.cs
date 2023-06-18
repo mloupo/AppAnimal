@@ -1,12 +1,11 @@
-﻿using AppAnimalRev.Modelo.Abstractas.No;
+﻿using AppAnimalRev.Modelo.Vitalidad;
 using System;
 
-namespace AppAnimalRev
+namespace AppAnimalRev.Modelo.Kingdom
 {
     public class Plantae : Thing, IEntity
     {
-        private string _kingdom = "Plantae";
-        private string _name = String.Empty;
+        protected string kingdom = "Plantae";
         protected Energy Energia;
         protected int Age;
         public string WhoIAm()
@@ -14,9 +13,14 @@ namespace AppAnimalRev
             return "Plantae";
         }
 
-        public Plantae()
+        public void BackToLife(Energy energia)
         {
-            
+            throw new NotImplementedException();
+        }
+
+        public Plantae(string name)
+        {
+            Name= name;
         }
     }
 } 

@@ -1,5 +1,7 @@
 ﻿
 
+using AppAnimalRev.Modelo.Kingdom;
+
 namespace AppAnimalRev.Interfaces
 {
     public interface IAnimal

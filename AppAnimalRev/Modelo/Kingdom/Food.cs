@@ -1,24 +1,28 @@
-﻿using System;
-namespace AppAnimalRev
+﻿using AppAnimalRev.Modelo.Vitalidad;
+using System;
+namespace AppAnimalRev.Modelo.Kingdom
+
 {
     public class Food : Thing, IEntity
     {
-        protected string kingdom = "Comida";
-        protected string name = String.Empty;
-        protected string Species = String.Empty;
+        protected string kingdom = "Comida";        
         protected int Calories;
         protected int Age;
-        protected int Diet;
+        protected string Diet = String.Empty;
 
-        public Food()
+        public Food(string name) 
         {
+            Name = name;
+        }
 
+        public void BackToLife(Energy energia)
+        {
+            throw new NotImplementedException();
         }
 
         public string WhoIAm()
-        {
-            name = "Comida";
-            return name;
+        {            
+            return "Comida";
         }
     }
 }

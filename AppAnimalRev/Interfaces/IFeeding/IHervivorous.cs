@@ -1,5 +1,0 @@
-interface IHervivorous
-{
-  void Eat();
-
-}

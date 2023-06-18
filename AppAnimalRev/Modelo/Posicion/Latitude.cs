@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppAnimal.Modelo.Concretas.No
+namespace AppAnimal.Modelo.Posicion
 {
     public class Latitude
     {

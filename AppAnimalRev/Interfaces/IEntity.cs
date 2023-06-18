@@ -1,7 +1,10 @@
-﻿namespace AppAnimalRev
+﻿using AppAnimal.Interfaces.Living;
+
+namespace AppAnimalRev
 {
-    public interface IEntity
-    {        
+    public interface IEntity : ILiving
+    {
         string WhoIAm();
+
     }
 }

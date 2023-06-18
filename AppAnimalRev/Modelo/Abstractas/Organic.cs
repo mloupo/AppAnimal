@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppAnimal.Modelo.Abstractas.No
-{
+namespace AppAnimal.Modelo.Abstractas 
+{ 
     public abstract class Organic : Thing
     {
         protected string Species = String.Empty;

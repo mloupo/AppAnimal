@@ -1,5 +1,5 @@
 ﻿using System;
-namespace AppAnimalRev
+namespace AppAnimalRev.Interactors
 
 {
     public class ConsoleInteractor : IStringInteractor
