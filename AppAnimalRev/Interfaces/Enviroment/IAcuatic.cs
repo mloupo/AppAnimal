@@ -1,8 +1,6 @@
-using AppAnimalRev.Interfaces.Enviroment;
-
-namespace AppAnimalRev.Interfaces.Breathing
+namespace AppAnimalRev.Interfaces.Enviroment
 {
-    interface IAcuatic: IEnviroment
+    interface IAcuatic : IEnviroment
     {
         void Swim();
     }

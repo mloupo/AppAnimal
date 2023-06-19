@@ -1,6 +1,6 @@
 using AppAnimalRev.Interfaces.Enviroment;
 
-namespace AppAnimalRev.Interfaces.Breathing
+namespace AppAnimalRev.Interfaces.Enviroment
 {
     interface IAereal : IEnviroment
     {

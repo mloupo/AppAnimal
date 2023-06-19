@@ -2,7 +2,8 @@
 
 namespace AppAnimalRev
 {
-    public interface IFactoryMethod    {
-        IEntity GetCreation(TipoCreacion kingdom);        
+    public interface IFactoryMethod
+    {
+        IEntity GetCreation(TipoCreacion kingdom);
     }
 }

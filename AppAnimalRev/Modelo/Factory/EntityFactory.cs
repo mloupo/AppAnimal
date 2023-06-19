@@ -1,4 +1,5 @@
-﻿using AppAnimalRev.Modelo.Kingdom;
+﻿using AppAnimal.Interfaces.Feeding;
+using AppAnimalRev.Modelo.Kingdom;
 using static AppAnimalRev.Enums;
 
 namespace AppAnimalRev.Modelo.Factory
@@ -13,13 +14,13 @@ namespace AppAnimalRev.Modelo.Factory
             switch (kingdom)
             {
                 case TipoCreacion.Animalia:
-                    entity = new Animalia("Lila");
+                    entity = new Animalia();
                     break;
                 case TipoCreacion.Plantae:
-                    entity = new Plantae("Maria Juana");
+                    entity = new Plantae();
                     break;
                 case TipoCreacion.Comida:                    
-                    entity = new Food("Tomate");
+                    entity = new Food();
                     break;
             }
             return entity;

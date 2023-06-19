@@ -1,6 +1,6 @@
-namespace AppAnimalRev.Interfaces.Breathing
+namespace AppAnimalRev.Interfaces.Enviroment
 {
-    interface ITerrestrial
+    interface ITerrestrial : IEnviroment
     {
         void Crawl();
         void Walk();

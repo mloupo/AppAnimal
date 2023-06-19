@@ -1,17 +1,17 @@
 ﻿
 
+using AppAnimal.Modelo.Posicion;
 using AppAnimalRev.Modelo.Kingdom;
+using AppAnimalRev.Modelo.Vitalidad;
 
 namespace AppAnimalRev.Interfaces
 {
     public interface IAnimal
     {
         void Eat(Food Comida);
-        void Move(IEntity entidad);  //utiliza las coordenadas de posicion y la energia del objeto
-                                            //Coordinates =(x,y)
-                                            //return [Newposition(x,y), (energy-30)] 
-        void Sleep(); //recupera el 50 % de energia
-        string WhoIAm(); //Soy tal, de tal especie y tantos años
+        void Move(Energy energia, Position posicion); // (energy-30), (CoordinatesNewPosition(x,y))
+        void Sleep(Energy energia); // (energy + 50)
+
 
     }
 }

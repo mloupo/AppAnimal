@@ -7,9 +7,14 @@ namespace AppAnimal.Interfaces.Feeding
     {
         public bool CanEat(Food food)
         {
-            throw new System.NotImplementedException();
+            return food.WhoIAm() is "Plantae";
+            
+        }
+        public override string ToString()
+        {
+            return "Soy Hervivoro";
         }
 
-        
+
     }
 }

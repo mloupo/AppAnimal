@@ -1,4 +1,5 @@
-namespace AppAnimalRev.Interfaces.Breathing
+namespace AppAnimalRev.Interfaces.Enviroment
+
 {
     interface IAereoTerrestre : IAereal, ITerrestrial
     {

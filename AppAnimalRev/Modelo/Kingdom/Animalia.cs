@@ -1,5 +1,6 @@
 ﻿using AppAnimal.Interfaces.Feeding;
 using AppAnimal.Modelo.Abstractas;
+using AppAnimal.Modelo.Posicion;
 using AppAnimalRev.Interfaces;
 using AppAnimalRev.Interfaces.Breathing;
 using AppAnimalRev.Interfaces.Enviroment;
@@ -9,38 +10,41 @@ using System;
 namespace AppAnimalRev.Modelo.Kingdom
 {
     public class Animalia : Organic, IEntity, IAnimal, IBreathing, IEnviroment
-    // IEnviroment tambien podria ser un enum por ahora
-
     {
-        protected string kingdom = "Animalia";
         protected Energy Energia;
+        protected IDiet Diet;
 
-        protected private IDiet Diet;
-
-
-
-        public string WhoIAm() { return "Animalia"; }
-
-        public void Breathe() { throw new NotImplementedException(); }
-
-        public void sleep() { throw new NotImplementedException(); }
-
-        public void move() { throw new NotImplementedException(); }
-
-        public void Eat(Food Comida) { throw new NotImplementedException(); }
-
-        public void Move(IEntity entidad) { throw new NotImplementedException(); }
-
-        public void Sleep() { throw new NotImplementedException(); }
-
-        public void BringMeToLife(Energy energia)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Animalia(string name)
+        public Animalia(string name, IDiet diet, string specie, IEnviroment Enviroment, int peso, int age)
         {
             Name = name;
+            Diet = diet;
+            species = specie;
+            enviroment = Enviroment;
+            Peso = peso;
+            Age = age;
         }
+
+        public Animalia() { }
+
+        public string WhoIAm()
+        { return "Animalia"; }
+
+        public void Breathe()
+        { throw new NotImplementedException(); }
+
+        public void Sleep(Energy energia)
+        { throw new NotImplementedException(); }
+
+        public void Move()
+        { throw new NotImplementedException(); }
+
+        public void Eat(Food Comida)
+        { throw new NotImplementedException(); }
+
+        public void Move(Energy energia, Position posicion)
+        { throw new NotImplementedException(); }
+
+        public void BringMeToLife(Energy energia)
+        { throw new NotImplementedException(); }     
     }
 }
