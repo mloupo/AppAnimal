@@ -9,11 +9,30 @@ namespace AppAnimalRev.Controladores
 {
         internal class AnimalController : IController
         {
+
+            private List<IAnimal> _animales = new List<IAnimal>();
+            private static AnimalController instance;
+            private AnimalController() { }
+            
+            // Singelton
+            public static AnimalController getInstance()
+            {
+                if (instance == null)
+                {
+                    instance = new AnimalController();
+                }
+                return instance;
+            }          
+            
+            public List<IAnimal> getListAnimals() // Devuelve la lista de animales creados
+            {
+                return _animales;
+            }
+        
             private IController AnimalsController = new AnimalController();
             private List<IAnimal> Animals = new List<IAnimal>();
 
-            private AnimalController() { }
-
+            
             public void AddAnimal(IAnimal animal)
             { Animals.Add(animal); }
 

@@ -8,13 +8,13 @@ namespace AppAnimal.Interfaces.Feeding
        
         public bool CanEat(Food food)
         {
-            return food.WhoIAm() is "Animalia" || food.WhoIAm() is "Plantae";
+            return food.GetType() == typeof(VegetalFood) ||  food.GetType() == typeof(AnimalFood); 
         }
+
         public override string ToString()
         {
             return "Soy Omnívoro";
-        }
-    
+        }    
     }
 }
 

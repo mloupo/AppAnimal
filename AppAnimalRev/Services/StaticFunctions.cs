@@ -8,6 +8,25 @@ namespace AppAnimalRev.Services
 {
     public abstract class StaticFunctions
     {
+        private static int _energy;
+
+        public static void setEnergyPlus(int energy) // Metodo generico para aumentar la energia de cualquier animal independientemente de como la obtenga
+        {
+            _energy += energy;
+            if (_energy >= 100)
+            {
+                _energy = 100;
+            }
+        }
+        public static void setEnergyLess(int energy) // Metodo generico para reducir la energia de cualquier animal independientemente de como la gaste
+        {
+            _energy -= energy;
+            if (_energy <= 0)
+            {
+                _energy = 0;
+            }
+        }
+
         public static double Promedio(params double[] valores)
         {
             double suma = 0.0;

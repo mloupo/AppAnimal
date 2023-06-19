@@ -11,8 +11,12 @@ namespace AppAnimalRev.Modelo.Kingdom
 {
     public class Animalia : Organic, IEntity, IAnimal, IBreathing, IEnviroment
     {
-        protected Energy Energia;
-        protected IDiet Diet;
+        private Energy energia;
+        private IDiet diet;
+
+        protected Energy Energia { get => energia; set => energia = value; }
+        protected IDiet Diet { get => diet; set => diet = value; }
+        public Animalia() { }
 
         public Animalia(string name, IDiet diet, string specie, IEnviroment Enviroment, int peso, int age)
         {
@@ -23,8 +27,6 @@ namespace AppAnimalRev.Modelo.Kingdom
             Peso = peso;
             Age = age;
         }
-
-        public Animalia() { }
 
         public string WhoIAm()
         { return "Animalia"; }
@@ -45,6 +47,11 @@ namespace AppAnimalRev.Modelo.Kingdom
         { throw new NotImplementedException(); }
 
         public void BringMeToLife(Energy energia)
-        { throw new NotImplementedException(); }     
+        { throw new NotImplementedException(); }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

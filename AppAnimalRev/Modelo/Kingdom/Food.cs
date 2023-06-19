@@ -7,22 +7,11 @@ using System.Xml.Linq;
 namespace AppAnimalRev.Modelo.Kingdom
 
 {
-    public class Food : Thing, IEntity , IFood 
+    public abstract class Food : Thing, IEntity , IFood 
     {
-        protected string kingdom = "Comida";
-        protected Energy Energy;
-        protected string Diet = String.Empty;
-
+        protected Energy energy;
         public Food() { }
-
-        public Food(string name, string diet, int peso, int age) 
-        {
-            Name = name;
-            Diet = diet;
-            Peso = peso;
-            Age = age;
-        }
-
+        
         public void BringMeToLife(Energy energia)
         { throw new NotImplementedException(); }
 
@@ -30,6 +19,6 @@ namespace AppAnimalRev.Modelo.Kingdom
         { throw new NotImplementedException(); }
 
         public string WhoIAm()
-        {  return kingdom; }
+        { return "";/* return diet (que puede ser animal o vegetal*/}
     }
 }

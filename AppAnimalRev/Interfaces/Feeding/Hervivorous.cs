@@ -7,9 +7,9 @@ namespace AppAnimal.Interfaces.Feeding
     {
         public bool CanEat(Food food)
         {
-            return food.WhoIAm() is "Plantae";
-            
+            return food.GetType() == typeof(AnimalFood);
         }
+
         public override string ToString()
         {
             return "Soy Hervivoro";
