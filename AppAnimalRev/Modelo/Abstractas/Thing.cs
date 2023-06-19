@@ -8,9 +8,7 @@ namespace AppAnimalRev
         protected int Id;
         protected Position Position;
         protected int Peso;
-
-
-
+        protected int Age;
     }
 
 }

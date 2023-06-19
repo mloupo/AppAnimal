@@ -7,13 +7,13 @@ namespace AppAnimalRev.Modelo.Kingdom
     {
         protected string kingdom = "Plantae";
         protected Energy Energia;
-        protected int Age;
+        
         public string WhoIAm()
         {
             return "Plantae";
         }
 
-        public void BackToLife(Energy energia)
+        public void BringMeToLife(Energy energia)
         {
             throw new NotImplementedException();
         }

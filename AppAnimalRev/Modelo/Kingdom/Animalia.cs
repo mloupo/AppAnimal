@@ -1,23 +1,24 @@
-﻿using AppAnimal.Modelo.Abstractas;
+﻿using AppAnimal.Interfaces.Feeding;
+using AppAnimal.Modelo.Abstractas;
 using AppAnimalRev.Interfaces;
 using AppAnimalRev.Interfaces.Breathing;
 using AppAnimalRev.Interfaces.Enviroment;
 using AppAnimalRev.Modelo.Vitalidad;
 using System;
-using System.Web;
 
 namespace AppAnimalRev.Modelo.Kingdom
 {
-    public class Animalia : Organic, IEntity, IAnimal, IBreathing, IEnviroment 
-        // IEnviroment tambien podria ser un enum por ahora
+    public class Animalia : Organic, IEntity, IAnimal, IBreathing, IEnviroment
+    // IEnviroment tambien podria ser un enum por ahora
 
     {
         protected string kingdom = "Animalia";
         protected Energy Energia;
-        protected int Age;
-        protected string Diet = String.Empty;
 
-      
+        protected private IDiet Diet;
+
+
+
         public string WhoIAm() { return "Animalia"; }
 
         public void Breathe() { throw new NotImplementedException(); }
@@ -32,14 +33,14 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public void Sleep() { throw new NotImplementedException(); }
 
-        public void BackToLife(Energy energia)
+        public void BringMeToLife(Energy energia)
         {
             throw new NotImplementedException();
         }
 
         public Animalia(string name)
         {
-            Name = name;            
+            Name = name;
         }
     }
 }

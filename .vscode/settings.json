@@ -1,5 +1,7 @@
 {
   "editor.tabCompletion": "on",
   "diffEditor.codeLens": true,
-  "zowe.settings.version": 2
+  "zowe.settings.version": 2,
+  "MutableAI.upsell": false,
+  "dotnet.defaultSolution": "AppAnimal.sln"
 }

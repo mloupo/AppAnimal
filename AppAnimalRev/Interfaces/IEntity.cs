@@ -5,6 +5,5 @@ namespace AppAnimalRev
     public interface IEntity : ILiving
     {
         string WhoIAm();
-
     }
 }

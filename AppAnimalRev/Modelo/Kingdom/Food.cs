@@ -3,11 +3,11 @@ using System;
 namespace AppAnimalRev.Modelo.Kingdom
 
 {
-    public class Food : Thing, IEntity
+    public class Food : Thing, IEntity , IFood 
     {
         protected string kingdom = "Comida";        
-        protected int Calories;
-        protected int Age;
+        protected Energy Energy;
+        
         protected string Diet = String.Empty;
 
         public Food(string name) 
@@ -15,14 +15,19 @@ namespace AppAnimalRev.Modelo.Kingdom
             Name = name;
         }
 
-        public void BackToLife(Energy energia)
+        public void BringMeToLife(Energy energia)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SumarCalorias()
         {
             throw new NotImplementedException();
         }
 
         public string WhoIAm()
         {            
-            return "Comida";
+            return Diet;
         }
     }
 }

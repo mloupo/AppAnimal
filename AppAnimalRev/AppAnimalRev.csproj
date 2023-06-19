@@ -78,6 +78,7 @@
       <DependentUpon>FormCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Enviroment\IEnviroment.cs" />
+    <Compile Include="Interfaces\Feeding\IDiet.cs" />
     <Compile Include="Modelo\Vitalidad\Energy.cs" />
     <Compile Include="Modelo\Kingdom\Animalia.cs" />
     <Compile Include="Modelo\Abstractas\Thing.cs" />
@@ -93,10 +94,9 @@
     <Compile Include="Interfaces\Enviroment\IAereoTerrestre.cs" />
     <Compile Include="Interfaces\Enviroment\IAnfibio.cs" />
     <Compile Include="Interfaces\Enviroment\ITerrestrial.cs" />
-    <Compile Include="Interfaces\Feeding\ICarnivorous.cs" />
-    <Compile Include="Interfaces\Feeding\IFrugivorous.cs" />
-    <Compile Include="Interfaces\Feeding\IHervivorous.cs" />
-    <Compile Include="Interfaces\Feeding\IOmnivorous.cs" />
+    <Compile Include="Interfaces\Feeding\Carnivorous.cs" />
+    <Compile Include="Interfaces\Feeding\Hervivorous.cs" />
+    <Compile Include="Interfaces\Feeding\Omnivorous.cs" />
     <Compile Include="Interfaces\IFood.cs" />
     <Compile Include="Interfaces\Living\ILiving.cs" />
     <Compile Include="Interfaces\Rest\IRest.cs" />

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppAnimalRev.Interfaces.Enviroment
+namespace SmallWorld.src.interfaces
 {
-    public interface IEnviroment
+    internal interface IController
     {
-        void move();
+        public abstract static IController GetController();
+
     }
 }
