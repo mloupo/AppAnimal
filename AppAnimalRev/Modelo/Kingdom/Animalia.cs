@@ -40,8 +40,21 @@ namespace AppAnimalRev.Modelo.Kingdom
         public void Move()
         { throw new NotImplementedException(); }
 
-        public void Eat(Food Comida)
-        { throw new NotImplementedException(); }
+        public void Eat(Food comida)
+        { 
+          bool puedo = diet.CanEat(comida); 
+           if (puedo)
+            {
+                
+            }
+           else
+            {
+                Console.WriteLine("No Puedo comer esto, " + diet.ToString());
+            }
+
+        
+        
+        }
 
         public void Move(Energy energia, Position posicion)
         { throw new NotImplementedException(); }

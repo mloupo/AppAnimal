@@ -8,7 +8,7 @@ namespace AppAnimal.Interfaces.Feeding
        
         public bool CanEat(Food food)
         {
-            return food.GetType() == typeof(VegetalFood) ||  food.GetType() == typeof(AnimalFood); 
+            return food.GetType() == typeof(VegetalFood) || food.GetType() == typeof(AnimalFood); 
         }
 
         public override string ToString()

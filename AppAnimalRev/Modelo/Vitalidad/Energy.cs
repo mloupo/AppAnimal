@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,10 @@ namespace AppAnimalRev.Modelo.Vitalidad
     {
         private int _estado = 100;
 
-        public int Estado { get => _estado; set => _estado = value; }
+        public int Estado()
+        { return _estado; }
 
-        protected void RecargarEnergia()
-        {
-
-        }
+        public void Estado(int value)
+        { _estado += value; }
     }
 }

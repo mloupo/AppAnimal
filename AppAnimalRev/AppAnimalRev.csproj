@@ -82,7 +82,6 @@
     </Compile>
     <Compile Include="Interfaces\Enviroment\Enviroment.cs" />
     <Compile Include="Interfaces\Enviroment\IEnviroment.cs" />
-    <Compile Include="Interfaces\Feeding\Diet.cs" />
     <Compile Include="Interfaces\Feeding\IDiet.cs" />
     <Compile Include="Modelo\Kingdom\AnimalFood.cs" />
     <Compile Include="Modelo\Kingdom\VegetalFood.cs" />
