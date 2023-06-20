@@ -11,8 +11,6 @@ namespace AppAnimal.Modelo.Abstractas
     public abstract class Organic : Thing
     {
         protected string species = String.Empty;
-        protected IEnviroment enviroment;
-
-       
+        protected IEnviroment enviroment;       
     }
 }

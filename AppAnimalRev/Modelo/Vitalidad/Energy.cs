@@ -9,12 +9,17 @@ namespace AppAnimalRev.Modelo.Vitalidad
 {
     public class Energy
     {
-        private int _estado = 100;
+        private int _estado; 
 
-        public int Estado()
+        public Energy()
+        {
+            _estado = 100;
+        }
+
+        public int getEstado()
         { return _estado; }
 
-        public void Estado(int value)
+        public void setEstado(int value)
         { _estado += value; }
     }
 }

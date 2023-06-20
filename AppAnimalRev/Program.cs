@@ -1,4 +1,6 @@
-﻿using AppAnimalRev.Modelo.Factory;
+﻿using AppAnimalRev.Interfaces;
+using AppAnimalRev.Modelo.Factory;
+using AppAnimalRev.Modelo.Kingdom;
 using System;
 namespace AppAnimalRev
 {
@@ -12,6 +14,7 @@ namespace AppAnimalRev
             IEntity OComidaVegetal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenVegetal);
             Console.WriteLine(OComidaVegetal.WhoIAm());
             Console.WriteLine(OComidaVegetal.ToString());
+            
             Console.ReadLine();
 
             IEntity OComidaAnimal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenAnimal);
@@ -22,6 +25,12 @@ namespace AppAnimalRev
             IEntity OAnimal = factory.GetCreation(Enums.TipoCreacion.Animalia);
             Console.WriteLine(OAnimal.WhoIAm());
             Console.WriteLine(OAnimal.ToString());
+            Animalia animal = (Animalia) OAnimal;
+            IFood comidita = (IFood) OComidaVegetal;
+            IFood comidita2 = (IFood)OComidaAnimal;
+            animal.Eat(comidita);
+            animal.Eat(comidita2);
+
             Console.ReadLine();
             
             IEntity OVegetal = factory.GetCreation(Enums.TipoCreacion.Plantae);

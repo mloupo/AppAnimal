@@ -25,6 +25,7 @@ namespace AppAnimalRev.Modelo.Kingdom
             enviroment = Enviroment;
             Peso = peso;
             Age = age;
+            Energia = new Energy();
         }
 
         public string WhoIAm()
@@ -45,6 +46,8 @@ namespace AppAnimalRev.Modelo.Kingdom
            if (puedo)
             {
                 comida.SumarCalorias(this.Energia);
+                Console.WriteLine("Estaba Sabrosisimo, ahora estroy recargado de energias!!");
+                Console.WriteLine("Mi energia ahora es de " + this.Energia.getEstado());
             }
            else
             {
@@ -61,6 +64,11 @@ namespace AppAnimalRev.Modelo.Kingdom
         public override string ToString()
         {
             return "Soy " + Name + ", y ademas " + Diet.ToString();
+        }
+
+        protected override void ShowId()
+        {
+            Console.WriteLine(lastId); ;
         }
     }
 }

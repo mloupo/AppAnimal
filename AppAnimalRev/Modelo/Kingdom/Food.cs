@@ -9,6 +9,10 @@ namespace AppAnimalRev.Modelo.Kingdom
 {
     public abstract class Food : Thing
     {
-        protected Energy energy;        
+        protected Energy energy; 
+        protected Food() : base()
+        {
+            energy = new Energy(); 
+        }
     }
 }

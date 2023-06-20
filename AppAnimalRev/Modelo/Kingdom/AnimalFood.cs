@@ -7,7 +7,7 @@ namespace AppAnimalRev.Modelo.Kingdom
     internal class AnimalFood : Food, IEntity, IFood
     {
 
-        public AnimalFood(string name, int peso, int age)
+        public AnimalFood(string name, int peso, int age) :base ()
         {
             Name = name;
             Peso = peso;
@@ -18,7 +18,7 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public void SumarCalorias(Energy energia)
         {
-            energia.Estado(this.energy.Estado());
+            energia.setEstado(this.energy.getEstado());
         }
 
         public string WhoIAm()
@@ -26,7 +26,12 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public override string ToString()
         {
-            return "Soy " + Name  + " de Origen Animal";
+            return "Soy " + Name  + ", de Origen Animal";
+        }
+
+        protected override void ShowId()
+        {
+            Console.WriteLine(lastId);
         }
     }
 }

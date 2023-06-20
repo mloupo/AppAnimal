@@ -23,8 +23,12 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public override string ToString()
         {
-            return "Soy " + Name + " de Origen Vegetal";
+            return "Soy " + Name + ", de Origen Vegetal";
         }
 
+        protected override void ShowId()
+        {
+            Console.WriteLine(lastId);
+        }
     }
 }

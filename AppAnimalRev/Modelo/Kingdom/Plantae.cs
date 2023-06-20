@@ -31,5 +31,10 @@ namespace AppAnimalRev.Modelo.Kingdom
         {
             return "Soy " + Name + ", de la especie " + species;
         }
+
+        protected override void ShowId()
+        {
+            Console.WriteLine(lastId);
+        }
     }
 } 

@@ -9,6 +9,7 @@ namespace AppAnimal.Modelo.Concretas
         {
             throw new System.NotImplementedException();
         }
+        // usar strategy con move() para que quede dentro de otro metodo mas especifico
 
         public void Swim()
         {
