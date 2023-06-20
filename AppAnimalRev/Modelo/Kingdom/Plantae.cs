@@ -12,8 +12,6 @@ namespace AppAnimalRev.Modelo.Kingdom
         private Energy energia;
         protected Energy Energia { get => energia; set => energia = value; }
 
-        public Plantae() { }
-
         public Plantae(string name, int peso, int age, string specie, IEnviroment Enviroment)
         {
             Name = name;            

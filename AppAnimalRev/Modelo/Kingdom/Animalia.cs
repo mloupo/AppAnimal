@@ -16,8 +16,7 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         protected Energy Energia { get => energia; set => energia = value; }
         protected IDiet Diet { get => diet; set => diet = value; }
-        public Animalia() { }
-
+        
         public Animalia(string name, IDiet diet, string specie, IEnviroment Enviroment, int peso, int age)
         {
             Name = name;
@@ -50,10 +49,7 @@ namespace AppAnimalRev.Modelo.Kingdom
            else
             {
                 Console.WriteLine("No Puedo comer esto, " + diet.ToString());
-            }
-
-        
-        
+            }       
         }
 
         public void Move(Energy energia, Position posicion)

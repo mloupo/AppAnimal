@@ -11,18 +11,22 @@ namespace AppAnimalRev
 
             IEntity OComidaVegetal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenVegetal);
             Console.WriteLine(OComidaVegetal.WhoIAm());
+            Console.WriteLine(OComidaVegetal.ToString());
             Console.ReadLine();
 
             IEntity OComidaAnimal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenAnimal);
             Console.WriteLine(OComidaAnimal.WhoIAm());
+            Console.WriteLine(OComidaAnimal.ToString());   
             Console.ReadLine();
 
             IEntity OAnimal = factory.GetCreation(Enums.TipoCreacion.Animalia);
             Console.WriteLine(OAnimal.WhoIAm());
+            Console.WriteLine(OAnimal.ToString());
             Console.ReadLine();
             
             IEntity OVegetal = factory.GetCreation(Enums.TipoCreacion.Plantae);
             Console.WriteLine(OVegetal.WhoIAm());
+            Console.WriteLine(OVegetal.ToString());    
             Console.ReadLine();
           
             
