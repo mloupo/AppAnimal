@@ -9,8 +9,12 @@ namespace AppAnimalRev
             
             IFactoryMethod factory = new EntityFactory();
 
-            IEntity OComida = factory.GetCreation(Enums.TipoCreacion.Comida);
-            Console.WriteLine(OComida.WhoIAm());
+            IEntity OComidaVegetal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenVegetal);
+            Console.WriteLine(OComidaVegetal.WhoIAm());
+            Console.ReadLine();
+
+            IEntity OComidaAnimal = factory.GetCreation(Enums.TipoCreacion.ComidaOrigenAnimal);
+            Console.WriteLine(OComidaAnimal.WhoIAm());
             Console.ReadLine();
 
             IEntity OAnimal = factory.GetCreation(Enums.TipoCreacion.Animalia);

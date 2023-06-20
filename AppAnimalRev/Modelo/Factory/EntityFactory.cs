@@ -19,8 +19,11 @@ namespace AppAnimalRev.Modelo.Factory
                 case TipoCreacion.Plantae:
                     entity = new Plantae();
                     break;
-                case TipoCreacion.Comida:                    
-                    entity = new Food();
+                case TipoCreacion.ComidaOrigenAnimal:                    
+                    entity = new AnimalFood("Carne", 2 , 22 );
+                    break;
+                case TipoCreacion.ComidaOrigenVegetal:
+                    entity = new VegetalFood("Tomates", 1, 1);
                     break;
             }
             return entity;

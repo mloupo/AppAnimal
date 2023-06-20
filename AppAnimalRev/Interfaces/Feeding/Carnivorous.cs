@@ -6,7 +6,7 @@ namespace AppAnimal.Interfaces.Feeding
     public class Carnivorous : IDiet
     {
        
-        public bool CanEat(Food food)
+        public bool CanEat(IFood food)
         {
             return food.GetType() == typeof(AnimalFood);
         }

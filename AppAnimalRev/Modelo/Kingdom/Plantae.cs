@@ -10,7 +10,6 @@ namespace AppAnimalRev.Modelo.Kingdom
     public class Plantae : Organic, IEntity
     {
         private Energy energia;
-
         protected Energy Energia { get => energia; set => energia = value; }
 
         public Plantae() { }
@@ -25,9 +24,14 @@ namespace AppAnimalRev.Modelo.Kingdom
         }       
 
         public string WhoIAm()
-        { return "Plantae"; }
+        { return GetType().ToString(); }
 
         public void BringMeToLife(Energy energia)
-        { throw new NotImplementedException(); }     
+        { throw new NotImplementedException(); }
+
+        public override string ToString()
+        {
+            return "Soy " + Name + ", de la especie " + species;
+        }
     }
 } 

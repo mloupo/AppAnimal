@@ -29,7 +29,7 @@ namespace AppAnimalRev.Modelo.Kingdom
         }
 
         public string WhoIAm()
-        { return "Animalia"; }
+        { return GetType().ToString(); }
 
         public void Breathe()
         { throw new NotImplementedException(); }
@@ -40,12 +40,12 @@ namespace AppAnimalRev.Modelo.Kingdom
         public void Move()
         { throw new NotImplementedException(); }
 
-        public void Eat(Food comida)
+        public void Eat(IFood comida)
         { 
           bool puedo = diet.CanEat(comida); 
            if (puedo)
             {
-                
+                comida.SumarCalorias(this.Energia);
             }
            else
             {
@@ -64,7 +64,7 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public override string ToString()
         {
-            return base.ToString();
+            return "Soy " + Name + ", y ademas " + Diet.ToString();
         }
     }
 }

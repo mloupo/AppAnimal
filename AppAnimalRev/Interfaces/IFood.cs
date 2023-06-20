@@ -1,9 +1,10 @@
 using AppAnimalRev.Modelo.Kingdom;
+using AppAnimalRev.Modelo.Vitalidad;
 
 namespace AppAnimalRev
 {
     public interface IFood
     {
-        int SumarCalorias(IFood comida);
+        void SumarCalorias(Energy energia);
     }
 }

@@ -8,7 +8,7 @@ namespace AppAnimalRev.Interfaces
 {
     public interface IAnimal
     {
-        void Eat(Food Comida);
+        void Eat(IFood Comida);
         void Move(Energy energia, Position posicion); // (energy-30), (CoordinatesNewPosition(x,y))
         void Sleep(Energy energia); // (energy + 50)
 

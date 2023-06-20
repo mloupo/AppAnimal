@@ -8,7 +8,7 @@ namespace AppAnimalRev
 {
     public static class Enums
     {
-        public enum TipoCreacion { Animalia, Plantae, Fungi, Protista, Monera, Comida }
+        public enum TipoCreacion { Animalia, Plantae, Fungi, Protista, Monera, ComidaOrigenAnimal, ComidaOrigenVegetal }
         public enum TipoComida { Animalia, Plantae}
 
         public enum Kingdom { Animalia, Plantae, Fungi, Protista, Monera, Comida };

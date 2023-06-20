@@ -1,13 +1,6 @@
-﻿using AppAnimalRev.Interfaces.Feeding;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Xml.Linq;
-using AppAnimal.Interfaces.Feeding;
+﻿using AppAnimal.Interfaces.Feeding;
 using AppAnimalRev.Modelo.Vitalidad;
+using System;
 
 namespace AppAnimalRev.Modelo.Kingdom
 {
@@ -22,9 +15,18 @@ namespace AppAnimalRev.Modelo.Kingdom
         }
         public void BringMeToLife(Energy energia)
         { throw new NotImplementedException(); }
+
+        public void SumarCalorias(Energy energia)
+        {
+            energia.Estado(this.energy.Estado());
+        }
+
         public string WhoIAm()
         { return GetType().ToString(); }
 
-
+        public override string ToString()
+        {
+            return "Soy " + Name  + " de Origen Animal";
+        }
     }
 }
