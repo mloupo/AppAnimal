@@ -19,7 +19,7 @@ namespace AppAnimalRev.Modelo.Kingdom
         { throw new NotImplementedException(); }
 
         public string WhoIAm()
-        { return GetType().ToString(); }
+        { return GetType().Name; }
 
         public override string ToString()
         {

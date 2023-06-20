@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppAnimal.Modelo.Posicion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,14 @@ namespace AppAnimalRev.Services
                 _energy = 0;
             }
         }
+        protected Position setPosition(Position posicion, int x, int y)
+        {
+            //Aca estaria bueno que se guarde la posicion anterior en variables privadas del objeto.
+            //Para poder volver a la posicion inmediata anterior
+            posicion.X = x;
+            posicion.Y = y;
+            return posicion;
+        }
 
         public static double Promedio(params double[] valores)
         {
@@ -40,19 +49,5 @@ namespace AppAnimalRev.Services
             prom = suma / valores.Length;
             return prom;
         }
-
-        /*public void static btnDetecta_Click(object sender, EventArgs e)
-      
-        
-           double prome = Promedio( 27, 9, 18);
-         Console.WriteLine("El promedio es: " + prome);
-
-         Console.WriteLine(char.IsDigit('.'));
-
-         for (int i = 0, j = 5; i < 6; i++, j--)
-         {
-             Console.WriteLine("i={0}, j={1}", i, j);
-         }
-         Console.ReadLine();*/
     }
 }

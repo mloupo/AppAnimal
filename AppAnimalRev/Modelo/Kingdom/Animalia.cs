@@ -29,7 +29,7 @@ namespace AppAnimalRev.Modelo.Kingdom
         }
 
         public string WhoIAm()
-        { return GetType().ToString(); }
+        { return GetType().Name; }
 
         public void Breathe()
         { throw new NotImplementedException(); }
