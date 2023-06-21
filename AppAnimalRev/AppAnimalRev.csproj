@@ -117,7 +117,7 @@
     <Compile Include="Modelo\Concretas\Terrestrial.cs" />
     <Compile Include="Modelo\Kingdom\Plantae.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Services\AlmacenGenerico.cs" />
+    <Compile Include="Services\Almacen.cs" />
     <Compile Include="Services\ProgramHelpers.cs" />
     <Compile Include="Services\StaticFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -50,10 +50,10 @@ namespace AppAnimalRev
             animal.Eat(comidita2);
             Console.ReadLine();           
 
-            AlmacenGenerico<VegetalFood> listaComidaVegetal = new AlmacenGenerico<VegetalFood>(10);
-            AlmacenGenerico<AnimalFood> listaComidaAnimal = new AlmacenGenerico<AnimalFood>(10);
-            AlmacenGenerico<Animalia> listaAnimales = new AlmacenGenerico<Animalia>(10);
-            AlmacenGenerico<Plantae> listaPlantas = new AlmacenGenerico<Plantae>(10);
+            Almacen<VegetalFood> listaComidaVegetal = new Almacen<VegetalFood>(10);
+            Almacen<AnimalFood> listaComidaAnimal = new Almacen<AnimalFood>(10);
+            Almacen<Animalia> listaAnimales = new Almacen<Animalia>(10);
+            Almacen<Plantae> listaPlantas = new Almacen<Plantae>(10);
 
             listaAnimales.Agregar(animal);
             listaComidaVegetal.Agregar(comidaVegetal);

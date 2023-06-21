@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace AppAnimalRev.Services
 {
-    public class AlmacenGenerico<T> where T: IEntity
+    public class Almacen<T> where T: IEntity
     {
         private T[] datosElemento;
         private int i = 0;
 
-        public AlmacenGenerico(int z) 
+        public Almacen(int z) 
         {
             datosElemento = new T[z];
         }   
