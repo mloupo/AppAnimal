@@ -14,7 +14,7 @@ namespace AppAnimalRev.Services
         public AlmacenGenerico(int z) 
         {
             datosElemento = new T[z];
-        }
+        }   
 
         public void Agregar(T obj)
         {

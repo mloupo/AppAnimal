@@ -1,6 +1,9 @@
-﻿namespace AppAnimalRev
+﻿using AppAnimalRev.Services;
+
+namespace AppAnimalRev
 {
-    internal class AlmacenAnimales
+    public class AlmacenGenerico
     {
+
     }
 }
