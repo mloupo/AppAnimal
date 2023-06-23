@@ -37,7 +37,7 @@ namespace AppAnimalRev.Modelo.Kingdom
         public void Sleep(Energy energia)
         { throw new NotImplementedException(); }
 
-        public void Move()
+        public void Move(Energy energia, Position posicion)
         { throw new NotImplementedException(); }
 
         public void Eat(IFood comida)
@@ -54,9 +54,6 @@ namespace AppAnimalRev.Modelo.Kingdom
                 Console.WriteLine("No Puedo comer esto, " + diet.ToString());
             }       
         }
-
-        public void Move(Energy energia, Position posicion)
-        { throw new NotImplementedException(); }
 
         public void BringMeToLife(Energy energia)
         { throw new NotImplementedException(); }

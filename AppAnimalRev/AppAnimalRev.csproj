@@ -63,7 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\AlmacenAnimales.cs" />
     <Compile Include="Controladores\AnimalController.cs" />
     <Compile Include="Controladores\CreationController.cs" />
     <Compile Include="Controladores\FormController.cs" />
