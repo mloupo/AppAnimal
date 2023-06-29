@@ -10,12 +10,10 @@ using System;
 namespace AppAnimalRev.Modelo.Kingdom
 {
     public class Animalia : Organic, IEntity, IAnimal, IBreathing, IEnviroment
-    {
-        private Energy energia;
-        private IDiet diet;
+    { 
 
-        protected Energy Energia { get => energia; set => energia = value; }
-        protected IDiet Diet { get => diet; set => diet = value; }
+        protected Energy Energia { get; set ; }
+        protected IDiet Diet { get; set; }
         
         public Animalia(string name, IDiet diet, string specie, IEnviroment Enviroment, int peso, int age)
         {
@@ -42,7 +40,7 @@ namespace AppAnimalRev.Modelo.Kingdom
 
         public void Eat(IFood comida)
         { 
-          bool puedo = diet.CanEat(comida); 
+          bool puedo = Diet.CanEat(comida); 
            if (puedo)
             {
                 comida.SumarCalorias(this.Energia);
@@ -51,7 +49,7 @@ namespace AppAnimalRev.Modelo.Kingdom
             }
            else
             {
-                Console.WriteLine("No Puedo comer esto, " + diet.ToString());
+                Console.WriteLine("No Puedo comer esto, " + Diet.ToString());
             }       
         }
 

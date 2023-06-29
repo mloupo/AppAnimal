@@ -9,8 +9,7 @@ namespace AppAnimalRev.Modelo.Kingdom
 {
     public class Plantae : Organic, IEntity
     {
-        private Energy energia;
-        protected Energy Energia { get => energia; set => energia = value; }
+        protected Energy Energia { get; set; }
 
         public Plantae(string name, int peso, int age, string specie, IEnviroment Enviroment)
         {
